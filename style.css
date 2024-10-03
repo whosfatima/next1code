@@ -2,6 +2,9 @@
   font-family: "yekan";
   src: url(./assist/Yekan.ttf) format(truetype);
 }
+/* .bold {
+  font-weight: bold;
+} */
 body {
   font-size: 18px;
   font-family: "yekan";
@@ -50,6 +53,16 @@ body {
 }
 .pbot-50 {
   padding-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  position: relative;
+}
+.pbot-50 > img {
+  text-align: left;
+}
+.pbot-50 > p {
+  width: 100px;
 }
 .menu {
   height: 100px;
@@ -57,11 +70,16 @@ body {
 }
 .menu > ul {
   display: flex;
-  /* padding: 0 20px; */
 }
 .menu > ul > li {
+  font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
   padding: 15px;
+  transition: all 0.2s;
+}
+.menu > ul > li:hover {
+  color: orange;
 }
 .image {
   background-image: url(https://next1code.ir/wp-content/uploads/2020/11/page-bg.jpg);
@@ -82,9 +100,25 @@ body {
 .footer {
   background-color: gray;
 }
+/* .footer > .text {
+  width: 200px;
+  height: 500px;
+} */
 .ptop {
   padding-top: 50px;
 }
 .footer > p {
+  font-weight: bold;
+  text-align: justify;
+}
+.box {
+  transition: all 0.5s;
+}
+.box:hover {
+  font-size: 20px;
+  color: orange;
+
+}
+p { 
   font-weight: bold;
 }
